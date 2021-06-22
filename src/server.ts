@@ -1,20 +1,16 @@
+import "reflect-metadata"
 import express from 'express';
+
+import { router } from "./routes";
+
+import "./database"
 
 // @types/express
 const app = express();
 
+app.use(express.json())
+app.use(router)
 
-app.get('/', (request, response) => {
-    // Request => Entrando
-    // Response => Saindo
-    return response.send("Olá mundo GET")
-})
-
-app.post('/teste-post', (request, response) => {
-    // Request => Entrando
-    // Response => Saindo
-    return response.send("Olá mundo POST")
-})
 
 // https://localhost:3000
 app.listen(3000, () => console.log("Server is ruinning"));
