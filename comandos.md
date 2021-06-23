@@ -1,5 +1,6 @@
 #Códigos do desafio: 
- ## 1- #together
+ ##### 1- #together
+ ##### 2- #unidade
 
 
 # Iniciar o projeto
@@ -35,5 +36,7 @@
 
         #Criando Entity
         #### - yarn typeorm entity:create -n User // Criando model
-        #### - yarn add @types/uuid -D // instalando UUID 
+        #### - yarn add @types/uuid -D // instalando UUID
+# Lib do express para tratar erros
+ #### - yarn add express-async-errors
 
